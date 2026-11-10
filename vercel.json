@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/page"
+    },
+    {
+      "source": "/rooms/:slug",
+      "destination": "/api/page"
+    }
+  ],
+  "functions": {
+    "api/page.ts": {
+      "includeFiles": "views/index.html"
+    }
+  },
+  "regions": [
+    "icn1"
+  ]
+}
